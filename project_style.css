@@ -1,6 +1,6 @@
 html {
   font-family: 'Helvetica Neue',Helvetica, sans-serif;
-  background-color: white  ;
+  background-image:linear-gradient(-45deg, #FBC59D, #B7CBEA);
 }
 *{
   padding: 0;
@@ -11,6 +11,7 @@ header {
   width: 1440px;
   background: url('../projectPart2/header.png');
   text-align: left;
+  margin-bottom: 0px;
 }
  header h1 {
    margin-top: 60px;
@@ -34,37 +35,170 @@ header {
    width: 400px;
 }
 
+
 input {
   display: block;
   float: left;
   width: 420px;
-  padding: 8px;
-  margin: 10px 10px 10px 0px;
+  height: 35px;
+  padding: 0px 0px 0px 10px;
+  margin: 10px 10px 0px 0px;
   font-size: 18px;
   font-weight: 500;
   border: 4px solid white;
-  border-radius: 30px;
+  border-radius: 20px;
 }
-button {
+header button{
+  display: block;
+  float:right;
+  width: 50px;
+  height: 35px;
+  margin: -39px -30px 0px 0px;
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: 550;
+  color: #4C4C4C;
+  background-color: #FBC59D;
+  border: 4px solid white;
+  border-radius: 20px;
+}
+
+div{
+  margin: 20px 40px 20px 190px;
+  background-image: linear-gradient(-45deg, #FDF3E5, #EEF2FC);
+  height: 480px;
+  width: 1060px;
+  border-radius: 5px;
+}
+article button {
   display: block;
   float: left;
   font-size: 16px;
   font-weight: bold;
   padding: 4px 4px 4px 4px;
-  border-radius: 30px;
+  border-radius: 2px;
+  margin: 220px 20px 10px 10px;
+  background-color: gold;
+  border: 1px solid gold;
+  height: 40px;
+  width: 120px;
+  opacity: 0.8;
 }
 
-article h3{
+article.intern h3{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 10px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  background-color: #ffffff;
+  font-size: 32px;
+  opacity: 0.75;
+  border-radius: 60px;
+}
+
+
+article.volunteer h3{
   margin: 10px 10px 10px 10px;
   padding: 10px 20px 10px 10px;
   width: 140px;
-  background-color: white;
+  text-align: center;
   color: black;
+  background-color: #ffffff;
   font-size: 32px;
+  opacity: 0.75;
   border-radius: 60px;
-
-
 }
+
+article.teach h3{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 10px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  background-color: #ffffff;
+  font-size: 32px;
+  opacity: 0.75;
+  border-radius: 60px;
+}
+
+article.study h3{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 10px;
+  width: 100px;
+  text-align: center;
+  color: black;
+  background-color: #ffffff;
+  font-size: 32px;
+  opacity: 0.75;
+  border-radius: 60px;
+}
+
+article.summer h3{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 10px;
+  width: 230px;
+  text-align: center;
+  color: black;
+  background-color: #ffffff;
+  font-size: 32px;
+  opacity: 0.75;
+  border-radius: 60px;
+}
+
+article p.description{
+  float: right;
+  margin: 170px 10px 10px 0px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px;
+  width: 180px;
+  height: 80px;
+  background-color: white;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 450;
+  opacity: 0.7
+}
+article.intern p.details{
+  display: block;
+  margin: 5px 1px 10px 10px;
+  float: left;
+  font-weight: 450;
+  opacity: 0.7;
+}
+
+article.volunteer p.details{
+  display: block;
+  margin: 10px 215px 10px 10px;
+  float: right;
+  font-weight: 450;
+  opacity: 0.7;
+}
+
+article.teach p.details{
+  display: block;
+  margin: 5px 1px 10px 10px;
+  float: left;
+  font-weight: 450;
+  opacity: 0.7;
+}
+
+article.study p.details{
+  display: block;
+  margin: 5px 1px 10px 10px;
+  float: left;
+  font-weight: 450;
+  opacity: 0.7;
+}
+
+article.summer p.details{
+  display: block;
+  margin: 5px 1px 10px 10px;
+  float: left;
+  font-weight: 450;
+  opacity: 0.7;
+}
+
 
  .missioncontent {
    color: black;
@@ -77,12 +211,13 @@ article h3{
    padding-top: 5px;
 }
  .missiontitle {
-   width: 50%;
+   width: 300px;
    font-size: 24px;
-   padding-top: 10px;
-   margin-top: 5px;
+   padding-top: 15px;
+   padding-bottom:2px;
+   margin-top: 0px;
    margin-bottom: 5px;
-   margin-left: 25%;
+   margin-left: 570px;
    font-style: normal;
    font-weight: 500;
    opacity: 0.7;
@@ -92,43 +227,80 @@ article h3{
  .mission {
    margin-bottom: 0px;
    margin-left: 0px;
+   margin-top: 0px;
    width: 100%;
    height: 150px;
    text-align: center;
-   background-color: #EEEEEE;
-   border-bottom: 0.1px solid white;
+   background-color: white;
+   opacity: 0.5;
  }
  .getstarted {
-   width: 70%;
+   width: 74%;
    margin-top: 40px;
-   margin-left: 15%;
+   margin-left: 13%;
    margin-bottom: 20px;
    text-align: center;
    font-size: 24px;
    padding-top: 10px;
    padding-bottom: 10px;
-   border-top: 0.5px solid #B4AFAF;
-   border-bottom: 0.5px solid #B4AFAF;
+   /*border-top: 0.5px solid #B4AFAF;
+   border-bottom: 0.5px solid #B4AFAF*/
+   border-radius: 30px;
    background-color: white;
+   opacity: 0.7;
  }
 
  .intern{
    display: block;
    float: left;
-   margin: 20px 40px 20px 120px;
+   margin: 10px 0px 0px 10px;
    background: url('../projectPart2/intern.png');
    height: 345px;
-   width: 35%;
-   border: 2px solid #F1F1F1;
+   width: 500px;
+   border: 5px solid #F1F1F1;
    border-radius: 10px;
+   opacity: 1;
  }
  .volunteer{
    display: block;
    float: right;
-   margin: 20px 120px 20px 40px;
+   margin: 10px 10px 0px 0px;
    background: url('../projectPart2/volunteer.jpg');
    height: 345px;
-   width: 35%;
-   border: 2px solid #F1F1F1;
+   width: 500px;
+   border: 5px solid #F1F1F1;
    border-radius: 10px;
+ }
+ .teach{
+   display: block;
+   float: left;
+   margin: 10px 0px 0px 10px;
+   background: url('../projectPart2/teach.jpg');
+   height: 345px;
+   width: 500px;
+   border: 5px solid #F1F1F1;
+   border-radius: 10px;
+   opacity: 1;
+ }
+ .study{
+   display: block;
+   float: left;
+   margin: 10px 0px 0px 10px;
+   background: url('../projectPart2/study.jpg');
+   height: 345px;
+   width: 500px;
+   border: 5px solid #F1F1F1;
+   border-radius: 10px;
+   opacity: 1;
+ }
+ .summer{
+   display: block;
+   float: left;
+   margin: 10px 0px 0px 10px;
+   background: url('../projectPart2/summer.jpg');
+   height: 345px;
+   width: 500px;
+   border: 5px solid #F1F1F1;
+   border-radius: 10px;
+   opacity: 1;
  }

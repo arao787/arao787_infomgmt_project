@@ -3,6 +3,8 @@
     <head>
       <title> Think Global: The Journey Begins Here </title>
       <link rel="stylesheet" type="text/css" href="/Users/advait/Documents/Classes/INFOMGT192/Project/projectPart2/project_style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="javascript.js"></script>
       <header>
           <h3 class = ''> Think Global </h3>
           <h1> The Journey Begins Here </h1>
@@ -14,7 +16,7 @@
               <section class="search">
         				<p>
         					<input placeholder="Search for a programme" type="text" id="searchText">
-        					<!--<button type="submit" onclick="search()">Search</button> -->
+        					<button type="submit" onclick="search()">Go</button>
         				</p>
         			</section>
       </header>
@@ -28,26 +30,82 @@
                 by coming together and moving forward together.
             </p>
         </section>
-        <section class = 'getstarted'>
-          <h4> Get started by finding the perfect programme! </h4>
-        </section>
-        <article class = 'intern'>
-          <h3> Intern </h3>
-              <!-- <fig id = 'intern'>
-              <img src = '../projectPart2/intern.png'
-                  alt = 'intern'>
-              <figcaption> Gain valuable work experience and forge
-                new networks </figcaption> -->
-          </fig>
-        </article>
-        <article class = 'volunteer'>
-          <h3> Volunteer </h3>
-          <img> </img><!--<fig id = 'volunteer'>
-            <img src = '../projectPart2/volunteer.jpg'
-                alt = 'intern'>
-            <figcaption>Make the world a better place for everyone </figcaption>
-          </fig> -->
-        </article>
+          <section class = 'getstarted'>
+            <h4> Get started by finding the perfect programme! </h4>
+          </section>
+        <div class = 'programmes'>
+
+          <article class = 'intern'>
+            <h3> Intern </h3>
+              <p class = 'description'>
+              Gain valuable work experience and forge new networks
+              </p>
+              <button> See more </button>
+              <p class = 'details'>
+                Where: Madrid, Spain<br>
+                Organization: SLV inc.<br>
+                Type of Work: Data Analysis<br>
+                Duration: 16 weeks<br>
+                Pay: Yes
+              </p>
+            </article>
+
+            <article class = 'volunteer'>
+              <h3> Volunteer </h3>
+                <p class = 'description'>
+              Make the world a better place for everyone
+                </p>
+                <button> See more </button>
+                <p class = 'details'>
+                  Where: Mexico City, Mexico<br>
+                  Organization: Jazzhands Foundation<br>
+                  Duration: 8 weeks<br>
+                  Pay: No
+                </p>
+          </article>
+
+          <!--<article class = 'teach'>
+            <h3> Teach </h3>
+              <p class = 'description'>
+              Meaningful work in new cultures
+              </p>
+              <button> See more </button>
+              <p class = 'details'>
+                Where: Maryland, USA<br>
+                Organization: Woodcreek Elementary<br>
+                Duration: 12 weeks<br>
+                Pay: Yes
+              </p>
+            </article>-->
+
+            <!--<article class = 'study'>
+              <h3> Study </h3>
+                <p class = 'description'>
+                Broaden your horizons, in one semester
+                </p>
+                <button> See more </button>
+                <p class = 'details'>
+                  Where: Toronto, Canada<br>
+                  Organization: Univeristy of Toronto<br>
+                  Duration: 12 weeks<br>
+                  Pay: No
+                </p>
+              </article>-->
+
+              <!--<article class = 'summer'>
+                <h3> Summer Camp </h3>
+                  <p class = 'description'>
+                  Step outiside your comfort zone
+                  </p>
+                  <button> See more </button>
+                  <p class = 'details'>
+                    Where: Adelaide, Australia<br>
+                    Organization: University of Adelaide<br>
+                    Duration: 4 weeks<br>
+                    Pay: No
+                  </p>
+                </article>-->
+        </div>
       </body>
     </head>
   </html>
