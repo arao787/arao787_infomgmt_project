@@ -5,18 +5,19 @@
       <link rel="stylesheet" type="text/css" href="./css/project_style.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   		<script src="js/javascript.js"></script>
-      <header>
+    </head>
+      <header onclick = 'hideGoButton()'>
           <h3 class = ''> Think Global </h3>
-          <h1> The Journey Begins Here </h1>
+          <h1 onload="showSubHead()"> The Journey Begins Here </h1>
 
-              <p> Discover yourself and maximise your potential by taking part in an
+              <p id = 'subheading'> Discover yourself and maximise your potential by taking part in an
                   exchange programme. <br>
                   Get started with Think Global.
               </p>
               <section class="search">
         				<p>
-        					<input placeholder="Search for a programme" type="text" id="searchText">
-        					<button type="submit" onclick="search()">Go</button>
+        					<input placeholder="Study, Teach, Summer Camp..." type="text" id="searchText" onclick="hideGoButton()"onkeypress="showGoButton()">
+        					<button type="submit" onclick="search()" onclick = 'showGoButton()' id = 'searchTextButton'>Go</button>
         				</p>
         			</section>
       </header>
@@ -33,15 +34,15 @@
           <section class = 'getstarted'>
             <h4> Get started by finding the perfect programme! </h4>
           </section>
-        <div class = 'programmes'>
+        <section class = 'wrapper'>
 
-          <article class = 'intern'>
+          <!--<article class = 'intern'>
             <h3> Intern </h3>
               <p class = 'description'>
               Gain valuable work experience and forge new networks
               </p>
-              <button> See more </button>
-              <p class = 'details'>
+              <button class = 'seeMore' id = 'intern'> See more </button>
+              <p class = 'details' id = 'intern_details'>
                 Where: Madrid, Spain<br>
                 Organization: SLV inc.<br>
                 Type of Work: Data Analysis<br>
@@ -55,14 +56,14 @@
                 <p class = 'description'>
               Make the world a better place for everyone
                 </p>
-                <button> See more </button>
-                <p class = 'details'>
+                <button class = 'seeMore' id = 'volunteer'> See more </button>
+                <p class = 'details' id = 'volunteer_details'>
                   Where: Mexico City, Mexico<br>
                   Organization: Jazzhands Foundation<br>
                   Duration: 8 weeks<br>
                   Pay: No
                 </p>
-          </article>
+          </article> -->
 
           <!--<article class = 'teach'>
             <h3> Teach </h3>
@@ -105,7 +106,10 @@
                     Pay: No
                   </p>
                 </article>-->
+          </section>
         </div>
+          <section class = 'footer'><footer>
+          <p>© 2020 Think Global</p>
+        </footer> </section>
       </body>
-    </head>
   </html>

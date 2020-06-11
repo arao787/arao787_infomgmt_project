@@ -28,6 +28,7 @@ header {
  }
 
  header p {
+   display: hide;
    margin-left: 65px;
    margin-top: 20px;
    opacity: 0.7;
@@ -49,7 +50,7 @@ input {
   border-radius: 20px;
 }
 header button{
-  display: block;
+  display: none;
   float:right;
   width: 50px;
   height: 35px;
@@ -63,10 +64,12 @@ header button{
   border-radius: 20px;
 }
 
-div{
-  margin: 20px 40px 20px 190px;
+.wrapper{
+  margin: 20px 40px 60px 190px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  overflow:auto;
   background-image: linear-gradient(-45deg, #FDF3E5, #EEF2FC);
-  height: 480px;
   width: 1060px;
   border-radius: 5px;
 }
@@ -160,23 +163,24 @@ article p.description{
   opacity: 0.7
 }
 article.intern p.details{
-  display: block;
+  display: none;
   margin: 5px 1px 10px 10px;
+  padding-bottom: 10px;
   float: left;
   font-weight: 450;
   opacity: 0.7;
 }
 
 article.volunteer p.details{
-  display: block;
+  display: none;
   margin: 10px 215px 10px 10px;
-  float: right;
+  float: left;
   font-weight: 450;
   opacity: 0.7;
 }
 
 article.teach p.details{
-  display: block;
+  display: none;
   margin: 5px 1px 10px 10px;
   float: left;
   font-weight: 450;
@@ -184,7 +188,7 @@ article.teach p.details{
 }
 
 article.study p.details{
-  display: block;
+  display: none;
   margin: 5px 1px 10px 10px;
   float: left;
   font-weight: 450;
@@ -192,12 +196,20 @@ article.study p.details{
 }
 
 article.summer p.details{
-  display: block;
+  display: none;
   margin: 5px 1px 10px 10px;
   float: left;
   font-weight: 450;
   opacity: 0.7;
 }
+
+footer{
+  float: right;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  opacity: 0.4;
+}
+
 
 
  .missioncontent {
@@ -253,8 +265,10 @@ article.summer p.details{
  .intern{
    display: block;
    float: left;
-   margin: 10px 0px 0px 10px;
+   margin: 10px 0px 100px 10px;
    background: url('../images/intern.png');
+   background-repeat: no-repeat;
+   background-size: 500px 345px;
    height: 345px;
    width: 500px;
    border: 5px solid #F1F1F1;
@@ -263,9 +277,11 @@ article.summer p.details{
  }
  .volunteer{
    display: block;
-   float: right;
-   margin: 10px 10px 0px 0px;
+   float: left;
+   margin: 10px 10px 100px 10px;
    background: url('../images/volunteer.jpg');
+   background-repeat: no-repeat;
+   background-size: 500px 345px;
    height: 345px;
    width: 500px;
    border: 5px solid #F1F1F1;
@@ -274,8 +290,10 @@ article.summer p.details{
  .teach{
    display: block;
    float: left;
-   margin: 10px 0px 0px 10px;
+   margin: 10px 0px 100px 10px;
    background: url('../images/teach.jpg');
+   background-repeat: no-repeat;
+   background-size: 500px 345px;
    height: 345px;
    width: 500px;
    border: 5px solid #F1F1F1;
@@ -285,8 +303,10 @@ article.summer p.details{
  .study{
    display: block;
    float: left;
-   margin: 10px 0px 0px 10px;
+   margin: 10px 0px 100px 10px;
    background: url('../images/study.jpg');
+   background-repeat: no-repeat;
+   background-size: 500px 345px;
    height: 345px;
    width: 500px;
    border: 5px solid #F1F1F1;
@@ -296,8 +316,10 @@ article.summer p.details{
  .summer{
    display: block;
    float: left;
-   margin: 10px 0px 0px 10px;
+   margin: 10px 0px 100px 10px;
    background: url('../images/summer.jpg');
+   background-repeat: no-repeat;
+   background-size: 500px 345px;
    height: 345px;
    width: 500px;
    border: 5px solid #F1F1F1;
