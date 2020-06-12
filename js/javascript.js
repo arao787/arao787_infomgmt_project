@@ -136,7 +136,7 @@ function hideGoButton(){
 }
 
 function scrollDown(){
-  window.location.href = "file:///Users/advait/Documents/Classes/INFOMGT192/Project/projectPart2/index.html#w";
+  window.location.href = "https://arao787.github.io/arao787_infomgmt_project/#w";
 }
 
 window.onscroll = function() {showRestOfPage()};
