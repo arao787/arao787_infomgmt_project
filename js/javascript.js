@@ -108,6 +108,8 @@ function search() {
 				}
 		// Display all matched courses
 		displayProgrammes(matches);
+    showRestOfPage();
+    setTimeout("scrollDown()",400);
 	}
 }
 
@@ -131,4 +133,21 @@ function showGoButton(){
 
 function hideGoButton(){
   $('#searchTextButton').hide(300);
+}
+
+function scrollDown(){
+  window.location.href = "file:///Users/advait/Documents/Classes/INFOMGT192/Project/projectPart2/index.html#w";
+}
+
+window.onscroll = function() {showRestOfPage()};
+function showRestOfPage(){
+    $('#m').show(500);
+    $('#gs').show(600);
+    $('#w').show(700);
+}
+
+window.onload = function() {showSubHeading()}
+
+function showSubHeading(){
+    $('.search').show(800);
 }

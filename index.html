@@ -7,22 +7,22 @@
   		<script src="js/javascript.js"></script>
     </head>
       <header onclick = 'hideGoButton()'>
-          <h3 class = ''> Think Global </h3>
-          <h1 onload="showSubHead()"> The Journey Begins Here </h1>
+          <h3> Think Global </h3>
+          <h1 id = 'mainHeading'> The Journey Begins Here </h1>
 
-              <p id = 'subheading'> Discover yourself and maximise your potential by taking part in an
+              <p class = 'search' id = 'subHeading'> Discover yourself and maximise your potential by taking part in an
                   exchange programme. <br>
                   Get started with Think Global.
               </p>
               <section class="search">
         				<p>
         					<input placeholder="Study, Teach, Summer Camp..." type="text" id="searchText" onclick="hideGoButton()"onkeypress="showGoButton()">
-        					<button type="submit" onclick="search()" onclick = 'showGoButton()' id = 'searchTextButton'>Go</button>
+        					<button type="submit" onclick="search()" id = 'searchTextButton'>Go</button>
         				</p>
         			</section>
       </header>
       <body>
-        <section class = 'mission'>
+        <section class = 'mission' id = 'm'>
             <p class = 'missiontitle'> Our Mission</p>
               <p class = 'missioncontent'>
                 At Think Global, our mission is to create a future built on
@@ -31,10 +31,10 @@
                 by coming together and moving forward together.
             </p>
         </section>
-          <section class = 'getstarted'>
+          <section class = 'getstarted' id = 'gs'>
             <h4> Get started by finding the perfect programme! </h4>
           </section>
-        <section class = 'wrapper'>
+        <section class = 'wrapper' id = 'w'>
 
           <!--<article class = 'intern'>
             <h3> Intern </h3>
